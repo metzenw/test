@@ -5,6 +5,7 @@ pipeline {
             steps {
                 echo 'Hello world!' 
                 sh 'ls -la'
+                sh 'date'
             }
         }
     }
