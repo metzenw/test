@@ -6,7 +6,7 @@ pipeline {
                 echo 'Hello world!' 
                 sh 'ls -la'
                 sh 'date'
-                echo 'new2'
+                echo 'new3'
             }
         }
     }
