@@ -1,14 +1,17 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1') {
+        stage('Test') {
             steps {
-                echo 'Hello world!' 
-                sh 'ls -la'
-                sh 'date'
-                echo 'new4'
-                echo 'new5'
+                echo 'Apply image to test node'
+                echo 'Specific test device'
             }
         }
+        stage('Deploy') {
+            steps {
+                echo 'Deploy Image to all node' 
+                echo 'imageupdate'
+            }
+        }        
     }
 }
