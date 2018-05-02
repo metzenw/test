@@ -4,7 +4,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Apply image to test node'
-                echo 'Specific test device'
+                /usr/bin/ssh 172.17.0.1 /usr/bin/python /home/jenkins/push-image.py
             }
         }
         stage('Deploy') {
